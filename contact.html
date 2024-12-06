@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a class="navbar-brand" href="index.html">
+                    Travel<i class="fa fa-globe" ></i>Nha Trang
+                </a>
+                <div class="nav-list">
+                    <a class="" href="index.html">HOME</a>
+                    <a href="introduce.html">INTRODUCING</a>
+                    <a href="destination.html">DESTINATION</a>
+                    <a class="active" href="contact.html">CONTACT</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+		<section class="contacts-5-grid">
+			<h2>Contact Information</h2>
+			<div class="contacts-sub-5">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124762.712919859!2d109.16392835542622!3d12.259457803550797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3170677811cc886f%3A0x5c4bbc0aa81edcb9!2zTmhhIFRyYW5nLCBLaMOhbmggSMOyYSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1732741613934!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			<div class="container">
+				<div class="contacts-5-grid map-content-5">
+					<label class="tabtle" for="email">Nha Trang</label>
+					<section id="content1" class="tab-content">
+						<div class="d-grid grid-col-4">
+							
+							<div class="service-col-4 contact">
+								<div class="icon-contact">
+									<i class="fa fa-envelope-o"></i>
+								</div>
+								<h6>Email</h6>
+								<a href="#" class="link1">le.thanh@northeastern.edu</a>					
+							</div>
+							<div class="service-col-4 contact">
+								<div class="icon-contact">
+									<i class="fa fa-phone"></i>
+								</div>
+								<h6>Phone</h6>
+								<a href="#" class="link1">(+1 781-298-5255)</a>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</section>
+        <section class="contact-sec-inner">
+            <div class="container ">
+                <div class="title-content">
+					<span class="sub-title">CONTACT</span>
+					<h3 class="hny-title">Get in Touch with Us</h3>
+					<p>Please leave your brief contact information below</p>
+				</div>
+				<form class="formWithUs" action="#" method="post">
+
+					<div class="row">
+						<div class="col-4 form-group">
+							<label for="fullName">Full Name</label>
+
+							<input type="text" name="fullName" id="fullName" required>
+						</div>
+						<div class="col-4 form-group">
+							<label for="email">Email</label>
+							<input type="email" name="email" id="email" required>
+						</div>
+						<div class="col-4 form-group">
+							<label for="subject">Subject</label>
+							<input type="text" name="subject" id="subject" required>
+						</div>
+					</div>
+
+
+					<div class="form-group">
+						<label for="message">Messages</label>
+						<textarea id="message" name="message" placeholder="" required></textarea>
+					</div>
+					<div class="form-submit text-right mt-4">
+						<button id="submit" type="submit" class="btn submit">Submit</button>
+					</div>
+				</form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-inner-main">
+			<div class="footer-hny-grids py-5">
+				<div class="container">
+					<div class="text-txt">
+						<div class="right-side">
+							<div class="row sub-columns">
+								<div class="sub-one-left">
+									<h2><a class="navbar-brand" href="index.html">
+											Travel<i class="fa fa-globe" aria-hidden="true"></i>Nha Trang</a></h2>
+									<p>At Travel Nha Trang, we are passionate about introducing the world to the beauty and charm of Nha Trang, 
+										Vietnam's coastal paradise.  If you have any questions or need assistance planning your visit, 
+										don't hesitate to contact us—we're here to help you make the most of your Nha Trang adventure! 
+									</p>
+									<p>Hotline: 781-298-5255 </p>	
+								</div>
+								<div class="col-4 sub-one-left mid-footer-gd">
+								</div>
+								<div class="col-4 sub-one-left">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<button onclick="topFunction()" id="movetop" title="Go to top" style="display: block;">
+				<i class="fa fa-arrow-up" aria-hidden="true"></i>
+			</button>
+			<script>
+				// When the user scrolls down 20px from the top of the document, show the button
+				window.onscroll = function () {
+					scrollFunction()
+				};
+
+				function scrollFunction() {
+					if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+						document.getElementById("movetop").style.display = "block";
+					} else {
+						document.getElementById("movetop").style.display = "none";
+					}
+				}
+
+				// When the user clicks on the button, scroll to the top of the document
+				function topFunction() {
+					document.body.scrollTop = 0;
+					document.documentElement.scrollTop = 0;
+				}
+			</script>
+			<script>
+				document.querySelector('.formWithUs').addEventListener('submit', function (e) {
+					e.preventDefault(); // Ngăn chặn hành động submit mặc định
+
+					// Lấy giá trị từ các input
+					const fullName = document.getElementById('fullName').value;
+					const email = document.getElementById('email').value;
+					const subject = document.getElementById('subject').value;
+					const message = document.getElementById('message').value;
+
+					// Lấy thời gian hiện tại
+					const currentDate = new Date().toLocaleString();
+
+					// Lưu dữ liệu vào localStorage
+					const formData = {
+						fullName,
+						email,
+						subject,
+						message,
+						date: currentDate
+					};
+
+					localStorage.setItem('formWithUsData', JSON.stringify(formData));
+
+					// Chuyển hướng sang trang withUs.html
+					window.location.href = 'withUs.html';
+				});
+			</script>
+			<!-- /move top -->
+
+		</section>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

@@ -1,6 +1,4 @@
-
-
-
+/* Large Screen */
 @media (max-width: 1200px) {
     .banner-img {
         height: 50vh;
@@ -30,7 +28,7 @@
         width: 100%;
     }
 }
-/* Màn hình Tablet */
+/* Tablet Screen */
 @media screen and (max-width: 991px) {
     .topnav a:not(.navbar-brand) {display: none;}
     .topnav a.icon {
@@ -120,7 +118,7 @@
 }
 
 
-/* Màn hình Mobile */
+/*Mobile Screen */
 @media screen and (max-width: 767px) {
     a.navbar-brand {
         color: #fff;

@@ -148,16 +148,16 @@
 				document.querySelector('.formWithUs').addEventListener('submit', function (e) {
 					e.preventDefault(); // Ngăn chặn hành động submit mặc định
 
-					// Lấy giá trị từ các input
+					// take data from input
 					const fullName = document.getElementById('fullName').value;
 					const email = document.getElementById('email').value;
 					const subject = document.getElementById('subject').value;
 					const message = document.getElementById('message').value;
 
-					// Lấy thời gian hiện tại
+					// current time
 					const currentDate = new Date().toLocaleString();
 
-					// Lưu dữ liệu vào localStorage
+					// save data to localStorage
 					const formData = {
 						fullName,
 						email,
@@ -168,7 +168,7 @@
 
 					localStorage.setItem('formWithUsData', JSON.stringify(formData));
 
-					// Chuyển hướng sang trang withUs.html
+					// transfer to withUs.html page
 					window.location.href = 'withUs.html';
 				});
 			</script>
